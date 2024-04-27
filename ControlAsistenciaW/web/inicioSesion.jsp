@@ -199,6 +199,8 @@
                 };
 
 
+                
+
                 // Aquí establece la URL del servlet o controlador que maneja la autenticación
                 var url = 'ControladorLogin';
                 xhr.open('POST', url, true);
@@ -209,7 +211,7 @@
             }
         }
 
-        
+
         // Genera el CAPTCHA al cargar la página
         window.onload = function() {
             generarCaptcha();
