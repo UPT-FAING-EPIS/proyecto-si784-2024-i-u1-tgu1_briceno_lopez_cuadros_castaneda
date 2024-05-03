@@ -55,6 +55,7 @@ Desarrollar e implementar un sistema de gestión de inventario en PHP que permit
 - Administrar Categoría
 - Realizar Consulta SQL
 
+```mermaid
 @startuml
 
 left to right direction
@@ -83,6 +84,7 @@ AC --> S: Requiere acceso
 RC --> S: Requiere acceso
 
 @enduml
+```
 
 ### Diagrama de Clases
 
