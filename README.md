@@ -56,34 +56,19 @@ Desarrollar e implementar un sistema de gestión de inventario en PHP que permit
 - Realizar Consulta SQL
 
 ```mermaid
-@startuml
-
-left to right direction
-
-actor Usuario as U
-actor Sistema as S
-
-rectangle "Sistema" {
-    usecase "Autenticarse" as AU
-    usecase "Registrar Usuario" as RU
-    usecase "Administrar Producto" as AP
-    usecase "Administrar Categoría" as AC
-    usecase "Realizar Consulta SQL" as RC
-}
-
-U --> AU: Interactúa con
-U --> RU: Interactúa con
-U --> AP: Interactúa con
-U --> AC: Interactúa con
-U --> RC: Interactúa con
-
-AU --> S: Requiere acceso
-RU --> S: Requiere acceso
-AP --> S: Requiere acceso
-AC --> S: Requiere acceso
-RC --> S: Requiere acceso
-
-@enduml
+graph TD;
+    A[Usuario] -->|Interactúa con| AU[Autenticarse]
+    A[Usuario] -->|Interactúa con| RU[Registrar Usuario]
+    A[Usuario] -->|Interactúa con| AP[Administrar Producto]
+    A[Usuario] -->|Interactúa con| AC[Administrar Categoría]
+    A[Usuario] -->|Interactúa con| RC[Realizar Consulta SQL]
+    AU[Autenticarse] --> S[Sistema]: Requiere acceso
+    RU[Registrar Usuario] --> S[Sistema]: Requiere acceso
+    AP[Administrar Producto] --> S[Sistema]: Requiere acceso
+    AC[Administrar Categoría] --> S[Sistema]: Requiere acceso
+    RC[Realizar Consulta SQL] --> S[Sistema]: Requiere acceso
+    style A fill:#f9f,stroke:#333,stroke-width:4px;
+    style S fill:#f9f,stroke:#333,stroke-width:4px;
 ```
 
 ### Diagrama de Clases
