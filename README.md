@@ -55,26 +55,6 @@ Desarrollar e implementar un sistema de gestión de inventario en PHP que permit
 - Administrar Categoría
 - Realizar Consulta SQL
 
-```mermaid
-graph TD;
-    A[Usuario] -->|Interactúa con| AU[Autenticarse]
-    A[Usuario] -->|Interactúa con| RU[Registrar Usuario]
-    A[Usuario] -->|Interactúa con| AP[Administrar Producto]
-    A[Usuario] -->|Interactúa con| AC[Administrar Categoría]
-    A[Usuario] -->|Interactúa con| RC[Realizar Consulta SQL]
-    AU[Autenticarse] --> S[Sistema]
-    RU[Registrar Usuario] --> S[Sistema]
-    AP[Administrar Producto] --> S[Sistema]
-    AC[Administrar Categoría] --> S[Sistema]
-    RC[Realizar Consulta SQL] --> S[Sistema]
-    S[Sistema] -->|Requiere acceso| AU[Autenticarse]
-    S[Sistema] -->|Requiere acceso| RU[Registrar Usuario]
-    S[Sistema] -->|Requiere acceso| AP[Administrar Producto]
-    S[Sistema] -->|Requiere acceso| AC[Administrar Categoría]
-    S[Sistema] -->|Requiere acceso| RC[Realizar Consulta SQL]
-    style A fill:#f9f,stroke:#333,stroke-width:4px;
-    style S fill:#f9f,stroke:#333,stroke-width:4px;
-```
 
 ### Diagrama de Clases
 
